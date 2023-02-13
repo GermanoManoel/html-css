@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+body{
+    background-color: #ffffff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1{
+    color: rgb(166, 29, 184);
+   
+
+}
+
+#principal{
+              background-color: blue;
+              text-align:center;
+              color: #ffffff;
+
+}
+
+
+ h2{
+    color:#191191;
+
+ }
+
+ h2#css{
+        color: red;
+
+
+ }
+ 
+ .basico {
+             color:blueviolet;
+             font-style: italic;
+            
+
+
+ }
+ 
+ .intermediario{
+                  color:brown;
+                  font-style: italic;
+                  text-align: center;
+                  font-weight: bold;
+                  
+
+ }
+ 
+ .avancado{
+            color:crimson;
+            font-style: italic;
+            text-align: right;
+
+
+
+ }
+ 
+ .aprendendo{
+              background-color: black;
+
+ }
+ 

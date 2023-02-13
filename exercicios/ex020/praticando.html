@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes1</title>
+
+    <style>
+        div:hover{
+                  color: rgb(0, 255, 128);
+        }
+
+        div > p{ 
+                 display: none;
+        }
+        
+        div:hover > p{
+                       display: block;
+                       background-color: chartreuse;
+                       width: 400px;
+                       border: 1px solid black;
+                       font-size: 50px;
+                       
+        }
+        
+        main:hover{
+                   color:blue;
+        }
+
+        main{
+              background-color: blueviolet;
+              border-radius: 100px;
+              width: 200px;
+              height: 200px;
+              position: absolute;
+              left: 1000px;
+        }
+           
+
+    </style>
+</head>
+<body> 
+    <h1> Praticando Pseudo-classes</h1>
+      <div>
+         Passe o mouse aqui para mostra mais.
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusamus qui accusantium doloremque facere ipsum eveniet? Sunt commodi quam error rerum! Quisquam labore quaerat eveniet maiores cumque tempore iusto similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae natus eaque expedita quia laudantium sunt libero. Earum, neque voluptatem? Vitae illum, sed officiis atque est accusamus consequuntur nostrum libero quos?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, quis cumque iure minima dolore laboriosam deleniti reiciendis nihil numquam aliquid, ab libero magni laudantium quasi blanditiis perspiciatis voluptatum sit sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio velit nulla dolor culpa qui, adipisci molestiae soluta reprehenderit harum dolorem ea quisquam illum possimus, ratione quasi sed voluptas dicta?
+         </p>
+
+
+
+      </div>
+
+      <main id="bola">
+          
+
+      </main>
+    
+</body>
+</html>
