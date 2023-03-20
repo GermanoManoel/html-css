@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio tabela 04 nomes e filmes</title>
+    <style>
+        table{
+            margin:auto;
+            width: 800px;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        
+        caption{
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 2em;
+        }
+
+        thead{
+            background-color: rgb(33, 168, 78);
+            color: white;
+            border: 1px solid white;
+        }
+        
+        tr,th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th.f,td.f{
+            background-color: rgb(153, 112, 192); 
+            
+        } 
+        
+        th.m,td.m{
+            background-color: rgb(37, 45, 119);
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+
+        <caption>Filmes Favoritos</caption>
+
+        <thead >
+            <tr>
+                <th>Grupos</th>
+                    <th>Nomes</th>
+                        <th colspan="3">Filmes</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="3" class="f">Mulheres</th>
+                     <td class="f">Ana Maria Santos</td>
+                        <td class="f">Vingadores</td>
+                            <td class="f">Alien</td>
+                                <td class="f">Rambo</td>
+            
+            </tr>
+            <tr>
+                <td class="f">Manuela Natasha de Melo</td>
+                    <td class="f">Batman</td>
+                         <td class="f">Hulk</td>
+                            <td class="f">Inception</td>
+            </tr>
+            <tr>
+                <td class="f">Beatriz Manuela da Silva</td>
+                    <td class="f">Big Hero</td>
+                        <td class="f">Matrix</td>
+                             <td class="f">Oblivion</td>
+            </tr>
+            <tr>
+                <th rowspan="3" class="m">Homens</th>
+                    <td class="m">Germano Manoel</td>
+                        <td class="m">The Batman</td>
+                            <td class="m">Vingadores ultimato/Guerra infinita</td>
+                                <td class="m"> Top Gun</td>
+            </tr>
+            <tr>
+                <td class="m">Melo Manoel</td>
+                    <td class="m">Homem Aranha</td>
+                        <td class="m"> Dragon Ball Z</td>
+                            <td class="m">Matrix</td>
+            </tr>
+            <tr>
+                <td class="m"> Manoel Germano</td>
+                    <td class="m">Liga Da Justiça</td>
+                        <td class="m"> Super Man</td>
+                            <td class="m"> Flash</td>
+            </tr>
+        </tbody>
+
+
+    </table>
+</body>
+</html>
