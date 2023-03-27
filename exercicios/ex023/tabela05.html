@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio De Tabela</title>
+</head>
+
+<style>
+    table{
+        border-collapse: collapse;
+        margin: auto;
+
+    }
+
+    caption{
+        border: 1px solid black;
+        padding: 20px;
+    }
+
+    tr,th,td{
+        border: 1px solid black;
+        text-align: center;
+        padding: 20px;
+    }
+
+    col.cnome{
+        background-color: blueviolet;
+    }
+
+    col.cgrupo{
+        background-color: rgb(58, 216, 38);
+    }
+</style>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="3">
+            
+        </colgroup>
+
+        <caption>Cadastro</caption>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Profissão</th>
+
+        </tr>
+
+        <tr>
+            <td > Germano Manoel</td>
+            <td>20</td>
+            <td>Masculino</td>
+            <td>Programador</td>
+        </tr>
+
+        <tr>
+            <td>Beatriz Oliver</td>
+            <td>22</td>
+            <td>Feminino</td>
+            <td>Analista de Software</td>
+        </tr>
+
+        <tr>
+            <td>Bruno Fraga</td>
+            <td>29</td>
+            <td>Masculino</td>
+            <td>Hacker</td>
+        </tr>
+
+        <tr>
+            <td>Manuela Santos</td>
+            <td>20</td>
+            <td>Feminino</td>
+            <td>Web Disagner</td>
+        </tr>
+
+        <tr>
+            <td> Brenda oliveira</td>
+            <td> 25</td>
+            <td>Feminino</td>
+            <td>Programadora</td>
+        </tr>
+    </table>
+</body>
+</html>
