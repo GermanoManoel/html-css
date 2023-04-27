@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Iframe</title>
+</head>
+<style>
+    div.fundo{
+        height: 630px;
+        width:100%;
+        background: black;
+    }
+
+    div.centro{
+        height: 598px;
+        width: 348px;
+        background: blue;
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        border-radius: 50px;
+
+    }
+
+    img{
+        height: 600px;
+        width: 350px;
+    }
+
+    iframe{
+        height: 470px;
+        width: 302px;
+        position: absolute;
+        top: 60px;
+        left: 25px;
+    }
+</style>
+<body>
+    <div class="fundo">
+        <div class="centro">
+            <img src="frame-iphone.png" alt="">
+            <iframe src="https://animesonlinecc.to" frameborder="0"></iframe>
+        </div>
+    </div>
+</body>
+</html>
