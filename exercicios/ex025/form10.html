@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Exercicio de Formularios</h1>
+    <form action="">
+        <div>
+            <label for="inum">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" value="5" min="1900"  max="2020" oninput="calcule()">
+         
+        </div>
+
+        <div>
+            <label for="idade">sua idade é :</label>
+            <output id="iidade">5</output>
+        </div>
+        <div>
+            <input type="submit" value="Enter">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+    <script>
+        function calcule(){
+            let atual = new Date().getFullYear()
+            iidade.innerHtml = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>
