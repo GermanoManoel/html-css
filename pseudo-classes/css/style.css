@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(209, 207, 207);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+hr{
+    width: 90vw;
+}
+
+div.p-c{
+    width: 80vw;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.438);
+    margin-top:10px;
+}
+
+/* 1º :Hover Quando passar o Mouse por cima. */
+button.botaoh{
+    height: 30px;
+    width: 150px;
+    margin: 0px 10px 10px 10px;
+    border-radius: 10px;
+    overflow: none;
+    border: 1px solid black;
+    cursor:pointer;
+    font-weight: bold;
+}
+
+.botaoh:hover{
+    background-color: blue;
+    color: white;
+}
+
+/* 2º :Active, Vai colocar o estilo quando tu clicar no botão. (Como estamos usando botão vai ser no botão, mas pode ser em uma div,input de formularios etc.) */
+
+button.botaoa{
+    height: 30px;
+    width: 150px;
+    margin: 0px 10px 10px 10px;
+    border-radius: 10px;
+    overflow: none;
+    border: 1px solid black;
+    cursor:pointer;
+    font-weight: bold;
+}
+.botaoa:active{
+    background-color: green;
+}
+
+/* 3º :Desabled Coloca um estilo quando o botão,input etc. Estiver desabilitado! */
+button.botaod{
+    height: 30px;
+    width: 150px;
+    margin: 0px 10px 10px 10px;
+    border-radius: 10px;
+    overflow: none;
+    border: 1px solid black;
+    cursor:pointer;
+    font-weight: bold;
+}
+
+.butaod:disabled{
+    background-color: crimson;
+    opacity: 0.3;
+}
+
+/* 4º :Empty A ideia e que se tu tiver 3 botões, e um deles estiver vazio, a gente aplique um  estilo diferente a esse botão. */
+
+button.botaoe{
+    height: 30px;
+    width: 150px;
+    margin: 0px 10px 10px 10px;
+    border-radius: 10px;
+    overflow: none;
+    border: 1px solid black;
+    cursor:pointer;
+    font-weight: bold;
+}
+
+.botaoe:empty{
+    background-color:rgb(196, 58, 58);
+}
+
+/* 5º :first-of-type */
+
+.FirstOfType p:first-of-type{
+    color:red;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.LastOftype p:last-of-type{
+    color: gold;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
