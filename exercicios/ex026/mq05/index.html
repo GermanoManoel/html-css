@@ -7,14 +7,14 @@
     <title>Media Query</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
     
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
         <span id="burguer" class="material-symbols-outlined" >
             menu
-            
             </span>
             <span id="fechar" class="material-symbols-outlined">
                     close
@@ -53,23 +53,32 @@
     </main>
 
     <script>
-        var menu = document.getElementById("itens"); //Coloquei aqui, porque tu vai ter que mexer nele no botão para abrir e fechar. Dai aqui ele fica como se fosse "Global"
-        var botao = document.getElementById("burguer");
-        botao.addEventListener("click",clicou);
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display ="block"
+                fechar.style.display = "none"
+            }else{
+                itens.style.display ="none"
+            }
+        }
 
-            function clicou(){
+        var menu = document.getElementById("itens"); //Coloquei aquio configuração para pegar o menu porque tu vai ter que mexer nele no botão para abrir e fechar. Dai aqui ele fica como se fosse "Global"
+        var abrirMenu= document.getElementById("burguer");
+        abrirMenu.addEventListener("click",abrir);
+
+            function abrir(){
                 menu.style.display ="block"; // <--
-                botao.style.display = "none"; 
-                fechar.style.display = "block"
+                abrirMenu.style.display = "none"; 
+                fechar.style.display = "block";
             }
 
-        var fecha = document.getElementById("fechar");
-        fecha.addEventListener("click",fechou);
+        var fechaMenu = document.getElementById("fechar");
+        fechaMenu.addEventListener("click",fechou);
 
             function fechou(){
-                menu.style.display = "none" // <--
-                botao.style.display ="block" 
-                fechar.style.display = "none"
+                menu.style.display = "none"; // <--
+                abrirMenu.style.display ="block"; 
+                fechar.style.display = "none";
             }
             
     </script>
