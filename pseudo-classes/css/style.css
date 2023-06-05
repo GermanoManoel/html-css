@@ -90,7 +90,7 @@ button.botaoe{
     background-color:rgb(196, 58, 58);
 }
 
-/* 5º :first-of-type */
+/* 5º :first-of-type Coloca estilo no primeiro item. */
 
 .FirstOfType p:first-of-type{
     color:red;
@@ -99,9 +99,66 @@ button.botaoe{
     font-style: italic;
 }
 
+/* 6º :firt-of-type coloca estilo no ultimo item.*/
 .LastOftype p:last-of-type{
     color: gold;
     font-weight: bold;
     font-style: italic;
     font-size: 20px;
+}
+
+/* 7º Focus, coloca um estilo quando o input(ou outro, por exemplo div) receber foco*/
+
+input.inputFocus{
+    height: 30px;
+    width: 200px;
+    transition: 2s ease-in-out;
+    text-indent: 1.2em
+}
+
+input.inputFocus:focus{
+    background-color: olive;
+    border-radius: 10px;
+    transform: scale(110%);
+    border: 2px solid black;
+}
+
+/* 8º Not, Cria uma condição de negação para aquele estilo. Muito util para quando você precisar aplicar o estilo dentro do seu projeto inteiro(todo), para uma classe especifica ou um tio de tag especifica. Porem ele não pode ser aplicado em uma unica situação! Quando Você precisa negar essa X condição. Por exemplo, Tu quer colocar estilo em todos os botões, exceto no que tem a class (teste) que está definida nesse botão. Ai tu não pode aplicar essse estilo.  */
+
+.botao-not:not(.new){
+    height: 30px;
+    width: 200px;
+    font-weight: bold;
+    background-color: rgb(19, 141, 141);
+}
+
+/* 9º Checked. Coloca um estilo no checkbox. Funciona para input type="radio" também ! */
+
+.checked:checked{
+    background-color: rgb(255, 72, 0);
+    height: 30px;
+    width: 30px;
+}
+
+/* 10º :Checked + ::After. Faz com que quando o checkbox não esteja selecionado, ele fique com a primeira configuração. Depois que o usuario selecionar o checkbox, ele passsa a ter a segunda configuração, Observe que os content vão mudar também, de Inativo para Ativo. Ou seja a gente usou uma Pseudo-classe e uma Pseudo-Elemento juntas. E não precisou do JS.*/
+.checkedAfter1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+}
+
+/*1º Primeira configuração */
+.checkedAfter::after{
+    content: 'Inativo';
+    position: relative;
+    left: 33.5rem;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+/*2º Segunda configuração  */ 
+.checkedAfter:checked::after{
+    content:'Ativo';
+    color: rgb(51, 133, 51);
+    font-weight: bold;
 }
