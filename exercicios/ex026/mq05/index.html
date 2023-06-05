@@ -5,12 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <span id="burguer" class="material-symbols-outlined" >
+            menu
+            
+            </span>
+            <span id="fechar" class="material-symbols-outlined">
+                    close
+                </span>
+            
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -41,5 +51,27 @@
             </p>
         </article>
     </main>
+
+    <script>
+        var menu = document.getElementById("itens"); //Coloquei aqui, porque tu vai ter que mexer nele no botão para abrir e fechar. Dai aqui ele fica como se fosse "Global"
+        var botao = document.getElementById("burguer");
+        botao.addEventListener("click",clicou);
+
+            function clicou(){
+                menu.style.display ="block"; // <--
+                botao.style.display = "none"; 
+                fechar.style.display = "block"
+            }
+
+        var fecha = document.getElementById("fechar");
+        fecha.addEventListener("click",fechou);
+
+            function fechou(){
+                menu.style.display = "none" // <--
+                botao.style.display ="block" 
+                fechar.style.display = "none"
+            }
+            
+    </script>
 </body>
 </html>
