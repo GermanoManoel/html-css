@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(209, 207, 207);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+hr{
+    width: 90vw;
+}
+
+div.p-c{
+    width: 80vw;
+    background-color: white;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.438);
+    margin-top:10px;
+}
+
+div.p-c h2{
+    text-align: center;
+}
+/* Deixa a primeira linha do paragrafo com estilo */
+.firstline::first-line{
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Dá estilo só na primeira letra */
+.firstletter::first-letter{
+    color: rgb(218, 22, 55);
+    font-size: 60px;
+    font-weight: bold;
+}
+
+/* Muda a cor de fundo ao tu selecionar com o botão esquerdo do mouse */
+
+.selection::selection{
+    background-color: rgb(233, 153, 96);
+    color: white;
+}
+
+/* Muda a estilização do marcado de uma lista UL etc. */
+
+ul.marker li::marker{
+    color: blue;
+}
+
+/* Muda o estilo de placeholder */
+
+.placeholder::placeholder{
+    color: rgb(58, 51, 153);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+.before::before{
+    content: "[X] ";
+}
+
+.after::after{
+    content: " >>>";
+}
