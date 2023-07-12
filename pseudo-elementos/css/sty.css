@@ -47,7 +47,7 @@ div.p-c h2{
     color: white;
 }
 
-/* Muda a estilização do marcado de uma lista UL etc. */
+/* Muda a estilização do marcado de uma lista UL etc. A bolinha */
 
 ul.marker li::marker{
     color: blue;
